@@ -1,7 +1,7 @@
-function handleHomeBtn() {
-    button = document.querySelector("button #home");
-    button.addEvenListener("click", ()=> {
-        
-    })
-
+export function renderActive(event) {
+    const buttons = document.querySelectorAll("button");
+    buttons.forEach(button => {
+        button.classList.remove('active');
+        event.target.classList.add('active');
+    });
 }
